@@ -17,6 +17,10 @@ button {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
+.button {
+    font-family: "font2";
+}
+
 html {
     cursor: url('nrm.cur'), auto;
 }
