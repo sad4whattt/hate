@@ -4,3 +4,13 @@ body {
 footer {
     color: purple;
 }
+body {
+    cursor: url('link.cur'), auto;
+}
+html {
+    cursor: url('link.cur'), auto;
+}
+@font-face {
+    font-family: font2;
+    src: url(fonts/alice.ttf)
+}
