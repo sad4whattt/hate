@@ -4,11 +4,11 @@ body {
 footer {
     color: purple;
 }
-body {
+footer {
     cursor: url('link.cur'), auto;
 }
 html {
-    cursor: url('link.cur'), auto;
+    cursor: url('nrm.cur'), auto;
 }
 @font-face {
     font-family: font2;
