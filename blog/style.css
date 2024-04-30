@@ -4,10 +4,7 @@ body {
 footer {
     color: purple;
 }
-a {
-    cursor: url('link.cur'), auto;
-}
-footer {
+body {
     cursor: url('link.cur'), auto;
 }
 
