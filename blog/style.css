@@ -3,7 +3,8 @@ body {
 }
 button {
     color: purple;
-    align-items: center;
+    background: black;
+    text-align: center;
     font-family: font2;
     src: url(fonts/alice.ttf);
     cursor: url('link.cur'), auto;
