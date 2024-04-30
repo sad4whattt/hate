@@ -1,8 +1,9 @@
 body {
     background-color: black;
 }
-footer {
+h3 {
     color: purple;
+    align-content: center;
 }
 footer {
     cursor: url('link.cur'), auto;
