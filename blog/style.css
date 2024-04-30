@@ -1,6 +1,25 @@
 body {
     background-color: black;
-  }
+}
 footer {
     color: purple;
 }
+a {
+    cursor: url('link.cur'), auto;
+}
+footer {
+    cursor: url('link.cur'), auto;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Jacquard+12+Charted&display=swap');
+
+@font-face {
+font-family: font;
+src: url(fonts/main.ttf)
+}
+
+@font-face {
+font-family: font2;
+src: url(fonts/alice.ttf)
+}
+
