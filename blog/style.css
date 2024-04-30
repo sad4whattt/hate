@@ -5,10 +5,15 @@ h3 {
     color: purple;
     align-items: center;
     font-family: font2;
+    src: url(fonts/alice.ttf);
     cursor: url('link.cur'), auto;
 }
 html {
     cursor: url('nrm.cur'), auto;
+}
+a {
+    font-family: font2;
+    src: url(fonts/alice.ttf)
 }
 @font-face {
     font-family: font2;
