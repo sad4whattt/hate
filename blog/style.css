@@ -5,8 +5,6 @@ h3 {
     color: purple;
     align-items: center;
     font-family: font2;
-}
-h3 {
     cursor: url('link.cur'), auto;
 }
 html {
