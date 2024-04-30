@@ -3,11 +3,18 @@ body {
 }
 button {
     color: purple;
-    background: black;
+    background-color: black;
     text-align: center;
     font-family: font2;
     src: url(fonts/alice.ttf);
     cursor: url('link.cur'), auto;
+
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 html {
     cursor: url('nrm.cur'), auto;
