@@ -3,6 +3,7 @@ body {
 }
 button {
     color: purple;
+    border: 1px solid black;
     background-color: black;
     text-align: center;
     font-family: font2;
