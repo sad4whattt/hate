@@ -7,9 +7,7 @@ button {
     background-color: black;
     text-align: center;
     font-family: font2;
-    src: url(/fonts/alice.ttf);
     cursor: url('link.cur'), auto;
-
     margin: 0;
     position: absolute;
     top: 50%;
@@ -23,9 +21,8 @@ html {
 }
 a {
     font-family: font2;
-    src: url(/fonts/alice.ttf)
 }
 @font-face {
     font-family: font2;
-    src: url(/fonts/alice.ttf)
+    src: url(alice.ttf)
 }
