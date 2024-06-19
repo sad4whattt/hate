@@ -21,56 +21,66 @@
 
 
 <style>
-    .container {
-  color: #e5e5e5;
-  font-size: 2.26rem;
-  text-transform: uppercase;
-  height: 100vh;
+
+.string {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  animation: move 4s infinite;
 }
 
-.animation {
-  height:50px;
-  overflow:hidden;
-  margin-left: 1rem;
+.greeting {
+  position: relative;
+  top: 8.6vmin;
+  animation: white-out 5s infinite;
 }
 
-.animation > div > div {
-  padding: 0.25rem 0.75rem;
-  height:2.81rem;
-  margin-bottom: 2.81rem;
-  display:inline-block;
+.closure::after {
+  content: '';
+  position: absolute;
+  height: 25vmin;
+  width: 40vmin;
+  background: #282c34;
+  transform: translate(-45vmin, -24.5vmin);
 }
 
-.animation div:first-child {
-  animation: text-animation 8s infinite;
+.closure::before {
+  content: '';
+  position: absolute;
+  height: 25vmin;
+  width: 40vmin;
+  background: #282c34;
+  transform: translate(-40vmin, 5vmin);
 }
 
-.first div {
-  background-color:#20a7d8;
-}
-.second div {
-  background-color:#CD921E;
-}
-.third div {
-  background-color:#c10528;
+.en {
+  color: #fa8231;
 }
 
-@keyframes text-animation {
-  0% {margin-top: 0;}
-  10% {margin-top: 0;}
-  20% {margin-top: -5.62rem;}
-  30% {margin-top: -5.62rem;}
-  40% {margin-top: -11.24rem;}
-  60% {margin-top: -11.24rem;}
-  70% {margin-top: -5.62rem;}
-  80% {margin-top: -5.62rem;}
-  90% {margin-top: 0;}
-  100% {margin-top: 0;}
+.es {
+  color: white;
 }
 
+.de {
+  color: #c678dd;
+}
+
+.it {
+  color: #a9b0bd;
+}
+
+@keyframes move {
+  25% {
+    transform: translatey(-5.8vmin);
+    opacity: 1;
+  }
+  50% {
+    transform: translatey(-11vmin);
+  }
+  75% {
+    transform: translatey(-16.5vmin);
+  }
+}
 </style>
 </head>
 
@@ -85,9 +95,6 @@
     </script>
 
     <header>
-        <section class="animation">
-            <div class="first"><div>TIMEZONE</div></div></section>
-
         <h1 style="font-family: font2;">
             timezone <img src="https://i.pinimg.com/564x/a4/97/78/a49778e6dd3d616c8cec7af0eb6a89ad.jpg" style="margin-bottom:-8px;width: 41px;">
         </h1>
@@ -137,6 +144,15 @@ created <a href="https://discord.com/oauth2/authorize?client_id=1206321633556697
 </details>
 
 <center><img src="https://img.discord.dog/1115373972385714196?font=rubik&displayData=user&backgroundColor=000000&bar1=000000&bar2=000000&backgroundColor2=000000&edgeRoundness=30&gradientOpacity=15" height="150px" width="350px"></center>
+
+<h1>System<span style="color:white;">.<span style="color:#e06c75;">out</span>.</span><span style="color:#61afef;">println</span>("</h1>
+<div class="string">
+  <h1 class="greeting en">Hello World!</h1>
+  <h1 class="greeting es">¡Hola Mundo!</h1>
+  <h1 class="greeting de">Hallo Welt!</h1>
+  <h1 class="greeting it">Ciao Mondo!</h1>  
+</div>
+<h1 class="closure">");</h1>
 </body>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 </html>
