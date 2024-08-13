@@ -647,7 +647,14 @@ b+p {
     color: #000b;
 }
 
-h1,
+h1 {
+    -webkit-mask: linear-gradient(to right, #fff 45%, transparent 55%) 0 0/220% 100% no-repeat;
+    opacity: clamp(.7, .75 * var(--scroll, 0) + .7, .85);
+    animation: 1s ease-in-out 2s both bio;
+    color: #fff;
+    font-weight: normal;
+    font-size: clamp(40px, 3vmin, 50px);
+}
 p {
     margin: 0;
 }
