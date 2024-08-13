@@ -1,96 +1,122 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" translate="no">
+
 <head>
-    <title>hate</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:type" content="website">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/open-fonts@1.1.1/fonts/inter.css" integrity="sha256-QOqJnVXqSKzjk5O4ngMED3Pd2o3S4Nfkieede4b6+Pc=" crossorigin="anonymous" referrerpolicy="no-referrer">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.3/new.css" integrity="sha256-PyPTJCAMwPQISGrpBIffj9UHOZKnACvcLiyc3lYANdc=" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <title>TIMEZONE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="blelelel">
+    <meta name="theme-color" content="#00a9ff">
+    <meta property="og:site_name" content="hate.bio">
+    <link rel="stylesheet" href="/index.css">
 
-
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Jacquard+12+Charted&display=swap');
-    </style>
-    <style>
-        @font-face {
-        font-family: font2;
-        src: url(fonts/Starborn.ttf)
-        }
-    </style>
-
-
+    <script defer src="/index.js"></script>
+    <script defer src="/min.js"></script>
 </head>
 
-
-
-
-
-
-<body>
-    <script>
-    document.getElementsByTagName("html")[0].style.cursor = "url('.cur'), auto";
-    </script>
+<body style="--scroll: 0;">
+    <div id="bg"></div>
 
     <header>
-        <h1 style="font-family: font2;">
-            timezone <img src="https://i.pinimg.com/564x/a4/97/78/a49778e6dd3d616c8cec7af0eb6a89ad.jpg" style="margin-bottom:-8px;width: 41px;">
-        </h1>
-
-<p> 
-<div id="txt">
-<body onload="startTime()">
-</div>
-    <script>
-    function startTime() {
-      const today = new Date();
-      let h = today.getHours();
-      let m = today.getMinutes();
-      let s = today.getSeconds();
-      m = checkTime(m);
-      s = checkTime(s);
-      document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
-      setTimeout(startTime, 1000);
-    }
-    
-    function checkTime(i) {
-      if (i < 10) {i = "0" + i};  // add extra 0's (Leave this be)
-      return i;
-    }
-    </script>
-</p>
-
-
-    <nav>
-            <a rel="me" href="https://t.me/tmezne">telegram</a> /
-            <script>document.write('<a rel="me" href=\"mailto:' + 'tz' + '@' + 'evilmail.to' + '\">');document.write('email' + '<\/a>');</script>
-        </nav>
+        <img src="invader-zim-gir.gif" height="200" width="200" alt="avatar">
+        <section>
+            <h1>
+                <svg viewBox="1 0 660 120">
+                    <title>TIMEZONE</title>
+                    blelele
+                </svg>
+            </h1>
+            <p>blelelele timezone is the goat</p>
+        </section>
     </header>
 
-    I do stuff.
-    <h1></h1>
+    <div id="arrow">
+        <svg stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" fill="none" viewBox="0 0 512 512">
+            <path d="M112 184l144 144 144-144"></path>
+        </svg>
+    </div>
 
-    <details>
-    <summary>More</summary>
-    <pre>
-dev @ <a href="https://ft.fail/tz">ft.fail</a>
-dev @ <a href="https://girbot.com/">GirBot (200+ commands)</a>
-private email @ <a href="https://disputed.pm">disputed</a>
-staff @ <a href="https://vouched.gg/tz">vouched</a>
-<!-- dev @ <a href="https://discord.com/oauth2/authorize?client_id=1206321633556697210">IconsAI Discord Bot</a> -->
-</pre>
-</details>
+    <div id="main">
+        <main>
+            <div class="widget">
+                <a href="https://ft.fail/">
+                    <div class="content">
+                         <div class="icon" style="background-color: #000;">
+                            <img src="https://i.imgur.com/PU8mU1w.png" style="width: 50px;">
+                           
+                        </div>
+                        <div class="meta">
+                            <b>Ft.fail</b>
+                            <p>Dev.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
 
-<!-- <details>
-    <summary>Projects</summary>
-    <pre>
-<center><a href="https://discord.gg/oguser">Discord Ticket Bot</a></center>
-</pre>
-</details> -->
+            <div class="widget">
+                <a href="https://girbot.com">
+                    <div class="content">
+                        <div class="icon" style="background-color: rgba(255, 255, 255, 0);">
+                            <img src="https://i.imgur.com/PaAd8S9.jpeg" >
+                        </div>
+                        <div class="meta">
+                            <b>GirBbot</b>
+                            <p>Dev.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
 
-<!-- <center><img src="https://img.discord.dog/1115373972385714196?font=rubik&displayData=user&backgroundColor=000000&bar1=000000&bar2=000000&backgroundColor2=000000&edgeRoundness=30&gradientOpacity=15" height="150px" width="350px">
-</center> -->
+            <div class="widget">
+                <a href="https://disputed.pm">
+                    <div class="content">
+                        <div class="icon" style="background-color: rgba(17, 120, 255, 0); --size: 100%;">
+                            <img src="https://i.imgur.com/8K4YmL4.png" style="width: 50px;">
+                        </div>
+                        <div class="meta">
+                            <b>Disputed</b>
+                            <p>Dev.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
 
+            <div class="widget">
+                <a href="https://vouched.gg">
+                    <div class="content">
+                        <div class="icon" style="background-color: rgb(0, 0, 0); --size: 90%;">
+                            <img src="https://i.imgur.com/9zc43Dj.png">
+                        </div>
+                        <div class="meta">
+                            <b>Vouched</b>
+                            <p>Admin.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+
+            <div class="widget" style="--columns: 4; --rows: 1;">
+                <a href="mailto:tz@evilmail.to">
+                    <div class="content">
+                        <div class="icon" style="background-color: hsla(0, 0%, 0%, 0.350); --size: 60%;">
+                            <svg fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"></path>
+                            </svg>
+                        </div>
+                        <div class="meta">
+                            <b>Email</b>
+                            <p>tz@evilmail.to</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </main>
+    </div>
+    
+</aside>
+    <!-- <footer>
+        <p>i shid myself</p>
+    </footer> -->
 </body>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 </html>
