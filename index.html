@@ -1,0 +1,278 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+   <meta charset="UTF-8">  
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+   <title>tz | developer</title>  
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>  
+   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">  
+   <style>  
+      :root {  
+        --primary: #60A5FA;  
+        --bg-dark: #111827;  
+        --bg-card: #1F2937;  
+        --text-primary: #F9FAFB;  
+        --text-secondary: #D1D5DB;  
+      }
+
+      body {
+        background: linear-gradient(to bottom right, var(--bg-dark), #0F172A);
+      }
+      .nav-link {
+        position: relative;
+        transition: none;
+      }  
+
+      .nav-link::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: 0;
+        left: 50%;
+        background-color: var(--primary);  
+        transition: none;
+      }  
+
+      .nav-link:hover::after {   
+        width: 0;  
+        left: 50%;  
+      }  
+
+      .nav-link.active {  
+        color: var(--primary);  
+      }  
+
+      .nav-link.active::after {
+        width: 100%;
+        left: 0;
+      }
+
+      .page {
+        display: none;
+        opacity: 0;
+        transition: opacity 0.4s ease;
+      }
+  
+      .page.active {
+        display: block;
+        opacity: 1;
+      }
+  
+      .bg-card {
+        background: var(--bg-card);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      }
+  
+      button {
+        position: relative;
+        overflow: hidden;
+        transition: all 0.3s ease;
+      }
+  
+      button::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: -100%;
+        background: linear-gradient(
+           90deg,
+           transparent,  
+           rgba(255, 255, 255, 0.2),
+           transparent
+        );
+        transition: 0.5s;
+      }
+  
+      button:hover::after {  
+        left: 100%;  
+      }  
+  
+      .tag {  
+        background: rgba(96, 165, 250, 0.1);  
+        border: 1px solid rgba(96, 165, 250, 0.2);  
+        backdrop-filter: blur(4px);  
+        transition: all 0.3s ease;  
+      }  
+  
+      .tag:hover {  
+        background: rgba(96, 165, 250, 0.2);  
+      }  
+  
+      img {  
+        transition: all 0.5s ease;  
+      }  
+  
+      img:hover {  
+        transform: scale(1.05);  
+      }  
+
+    ::-webkit-scrollbar {  
+      width: 0;  
+      height: 0;  
+    }  
+    
+    body {  
+      -ms-overflow-style: none; 
+      scrollbar-width: none;
+    }
+
+   </style>  
+</head>  
+    <body class="bg-gray-900 text-gray-100 min-h-screen flex flex-col items-center justify-center">  
+       <nav class="bg-card fixed w-full z-10 top-0">  
+          <div class="max-w-7xl mx-auto px-4">  
+            <div class="flex items-center justify-between h-16">  
+               <div class="flex items-center">  
+                  <span class="text-xl font-bold">timezone</span>  
+               </div>  
+               <div class="flex space-x-4">  
+                  <a href="#home" class="nav-link px-3 py-2 hover:text-blue-400 active">Home</a>  
+                  <a href="#projects" class="nav-link px-3 py-2 hover:text-blue-400">Projects</a>  
+                  <a href="#pricing" class="nav-link px-3 py-2 hover:text-blue-400">Pricing</a>  
+               </div>  
+            </div>  
+          </div>  
+       </nav>  
+  
+   <main class="pt-16 flex-1 w-full max-w-7xl mx-auto px-4">  
+    <section id="home" class="page active min-h-screen flex items-center justify-center overflow-hidden">  
+        <div class="bg-gray-800 rounded-lg shadow-xl p-8 w-full md:w-1/2 lg:w-1/3 flex flex-col items-center justify-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">  
+           <img src="https://i.imgur.com/nrFqN9x.jpeg" alt="Profile" class="rounded-full w-32 h-32 mb-8">  
+           <h1 class="text-4xl font-bold mb-4">timezone</h1>  
+           <h2 class="text-2xl text-blue-400 mb-4">Full Stack Developer</h2>  
+           <p class="text-gray-300 mb-6 text-center">  
+               retarded idiot that sits inside all day and codes random shit then drops it just to do
+               it all over again, then again, then again, till commissioned for a project.
+           </p>  
+           <div class="mt-8">  
+             <h3 class="text-xl font-semibold mb-4">Contact Information</h3>  
+             <div class="space-y-2 text-gray-300 text-center">  
+                <p>📩 tz@evilmail.to</p>  
+                <p>🌎 Toronto, Canada</p> 
+                <p>💬 p1lw | 1115373972385714196</p>  
+             </div>  
+           </div>  
+        </div> 
+     </section>  
+
+     <section id="projects" class="page min-h-screen flex items-center justify-center overflow-hidden">  
+        <div class="max-w-7xl mx-auto px-4 py-12 w-full overflow-y-auto">  
+           <h2 class="text-3xl font-bold mb-8">Featured Projects</h2>  
+           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">  
+             <!-- Project 1 -->  
+             <div class="bg-gray-800 rounded-lg overflow-hidden shadow-xl">  
+                <!-- <img src="/api/placeholder/400/200" alt="Project 1" class="w-full"> -->
+                <div class="p-6">  
+                   <a href="https://ak47.pw/"><h3 class="text-xl font-semibold mb-2">ak47.pw</h3></a>
+                   <p class="text-gray-300 mb-4">A feature-rich, antinuke Discord bot.</p>  
+                   <div class="flex flex-wrap gap-2">  
+                     <!-- <span class="px-2 py-1 bg-blue-500 rounded text-sm"></span> -->
+                     <span class="px-2 py-1 bg-green-500 rounded text-sm">Node.js</span>  
+                     <span class="px-2 py-1 bg-yellow-500 rounded text-sm">MongoDB</span>  
+                   </div>  
+                </div>  
+             </div>  
+         
+             <div class="bg-gray-800 rounded-lg overflow-hidden shadow-xl">  
+                <!-- <img src="/api/placeholder/400/200" alt="Project 2" class="w-full"> -->
+                <div class="p-6">  
+                   <a href="https://ft.fail/"><h3 class="text-xl font-semibold mb-2">ft.fail</h3></a>
+                   <p class="text-gray-300 mb-4">Public biolink with several unique features.</p>  
+                   <div class="flex flex-wrap gap-2">  
+                     <span class="px-2 py-1 bg-purple-500 rounded text-sm">PHP</span>  
+                     <span class="px-2 py-1 bg-yellow-500 rounded text-sm">MySQL</span>  
+                     <!-- <span class="px-2 py-1 bg-indigo-500 rounded text-sm"></span> -->
+                   </div>  
+                </div>  
+             </div>  
+         
+             <div class="bg-gray-800 rounded-lg overflow-hidden shadow-xl">  
+                <!--<img src="/api/placeholder/400/200" alt="Project 3" class="w-full"> -->
+                <div class="p-6">  
+                   <a href="https://discord.gg/nTespxXzGm"><h3 class="text-xl font-semibold mb-2">Cogimyu Bot</h3></a>
+                   <p class="text-gray-300 mb-4">Private Discord bot with a working currency system, and Roblox UGC drop system.</p>  
+                   <div class="flex flex-wrap gap-2">  
+                     <span class="px-2 py-1 bg-green-500 rounded text-sm">Node.js</span>  
+                     <span class="px-2 py-1 bg-red-500 rounded text-sm">Several API's</span>  
+                     <!-- <span class="px-2 py-1 bg-yellow-500 rounded text-sm"></span> -->
+                   </div>  
+                </div>  
+             </div>  
+           </div>  
+        </div>  
+     </section>  
+   
+     <section id="pricing" class="page min-h-screen flex items-center justify-center overflow-hidden">  
+        <div class="max-w-7xl mx-auto px-4 py-12 w-full overflow-y-auto">  
+           <h2 class="text-3xl font-bold mb-8">Service Pricing</h2>  
+           <div class="grid grid-cols-1 md:grid-cols-3 gap-6">  
+             <div class="bg-gray-800 rounded-lg p-6 shadow-xl">  
+                <h3 class="text-xl font-semibold mb-4">Discord Bot</h3>  
+                <div class="text-3xl font-bold mb-4">Starting @ $30</div>  
+                <ul class="space-y-2 mb-6">  
+                   <li>✓ Js and Python</li>  
+                   <li>✓ High command count</li>  
+                   <li>✓ Live updates in a private server</li>  
+                   <li>✓ Future updates available</li>  
+                   <li>✓ Help with setting up hosting</li>  
+                </ul>  
+                <a href="mailto:tz@evilmail.to"><button class="w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded">  
+                   Get Started  
+                </button></a>
+             </div>  
+         
+             <div class="bg-gray-800 rounded-lg p-6 shadow-xl border-2 border-blue-400">  
+                <h3 class="text-xl font-semibold mb-4">Fullstack Website</h3>  
+                <div class="text-3xl font-bold mb-4">Starting @ $80</div>  
+                <ul class="space-y-2 mb-6">  
+                   <li>✓ Custom site features that meet your criteria</li>  
+                   <li>✓ User Authentication</li>  
+                   <li>✓ MySQL Database Integration</li>  
+                   <!-- <li>✓ API Development</li> -->  
+                   <li>✓ Help with setting up hosting</li>  
+                </ul>  
+                <a href="mailto:tz@evilmail.to"><button class="w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded">  
+                   Get Started  
+                </button></a>
+             </div>
+         
+             <!-- <div class="bg-gray-800 rounded-lg p-6 shadow-xl">  
+                <h3 class="text-xl font-semibold mb-4">Enterprise Solution</h3>  
+                <div class="text-3xl font-bold mb-4">$9,999+</div>  
+                <ul class="space-y-2 mb-6">  
+                   <li>✓ Full-Scale Application</li>  
+                   <li>✓ Advanced Security</li>  
+                   <li>✓ Cloud Infrastructure</li>  
+                   <li>✓ 24/7 Support</li>  
+                   <li>✓ Unlimited Revisions</li>  
+                </ul>  
+                <button class="w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded">  
+                   Contact Us  
+                </button>  
+             </div> -->
+           </div>  
+        </div>  
+     </section>
+ 
+   </main>  
+  
+   <script>  
+      $(document).ready(function() {  
+        $('.nav-link').click(function(e) {  
+           e.preventDefault();  
+           const target = $(this).attr('href').substring(1);  
+            
+           $('.nav-link').removeClass('active');  
+           $(this).addClass('active');  
+            
+           $('.page').removeClass('active');  
+           $(`#${target}`).addClass('active');  
+        });  
+      });  
+   </script>  
+</body>  
+</html>
